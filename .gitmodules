@@ -1,0 +1,4 @@
+[submodule "phyLS"]
+	path = phyLS
+	url = https://github.com/ShangkunLi/phyLS.git
+	branch = aig
