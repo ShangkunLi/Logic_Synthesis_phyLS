@@ -9,6 +9,19 @@ Repository: https://github.com/ShangkunLi/Logic_Synthesis_phyLS.git
 
 ## 目录
 
+- [Documentation](#documentation)
+  - [目录](#目录)
+  - [1 项目说明](#1-项目说明)
+    - [1.1 功能说明](#11-功能说明)
+    - [1.2 文件结构](#12-文件结构)
+  - [2 代码说明](#2-代码说明)
+    - [2.1 Balance算法实现思路](#21-balance算法实现思路)
+    - [2.2 Rewrite算法实现思路](#22-rewrite算法实现思路)
+  - [3 编译及结果](#3-编译及结果)
+    - [3.1 编译](#31-编译)
+    - [3.2 结果](#32-结果)
+
+
 ## 1 项目说明
 ### 1.1 功能说明
 本项目利用phyLS提供的逻辑综合工具代码框架，完善其中的balance和rewrite功能。然后利用该工具对10个benchmarks进行逻辑综合，并记录结果。
