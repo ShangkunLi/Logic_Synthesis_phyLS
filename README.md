@@ -110,8 +110,6 @@ make
 ### 3.2 结果
 对20个benchmarks分别进行测试，分别记录其优化前和进行balancing、rewriting优化后的相关结果。
 
-其中将优化后相关指标有所改善的指标用粗体字体标记出来。
-
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -121,6 +119,8 @@ make
 .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
 .tg .tg-uzvj{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle}
 </style>
+
+
 <table class="tg"><thead>
   <tr>
     <td class="tg-9wq8">优化前/后</td>
