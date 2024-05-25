@@ -110,8 +110,7 @@ make
 ### 3.2 结果
 对20个benchmarks分别进行测试，分别记录其优化前和进行balancing、rewriting优化后的相关结果。
 
-其中将优化后相关指标有所改善的指标用红色字体标记出来。
-
+其中将优化后相关指标有所改善的指标用粗体字体标记出来。
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -119,198 +118,197 @@ make
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-baqh{text-align:center;vertical-align:top}
-.tg .tg-nrix{text-align:center;vertical-align:middle}
-.tg .tg-9ewa{color:#fe0000;text-align:center;vertical-align:top}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-uzvj{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle}
 </style>
 <table class="tg"><thead>
   <tr>
-    <td class="tg-baqh">优化前/后</td>
-    <td class="tg-baqh">i/o</td>
-    <td class="tg-baqh">gates</td>
-    <td class="tg-baqh">level</td>
-    <td class="tg-nrix" rowspan="21">After tech mapping</td>
-    <td class="tg-baqh">#gates</td>
-    <td class="tg-baqh">area</td>
-    <td class="tg-baqh">delay</td>
+    <td class="tg-9wq8">优化前/后</td>
+    <td class="tg-9wq8">i/o</td>
+    <td class="tg-9wq8">gates</td>
+    <td class="tg-9wq8">level</td>
+    <td class="tg-9wq8" rowspan="21">After tech mapping</td>
+    <td class="tg-9wq8">#gates</td>
+    <td class="tg-9wq8">area</td>
+    <td class="tg-9wq8">delay</td>
   </tr>
   <tr>
-    <td class="tg-baqh">adder</td>
-    <td class="tg-baqh">256/129</td>
-    <td class="tg-baqh">1020/1020</td>
-    <td class="tg-baqh">255/255</td>
-    <td class="tg-baqh">639/639</td>
-    <td class="tg-baqh">1849/1849</td>
-    <td class="tg-baqh">204.9/204.9</td>
+    <td class="tg-9wq8">adder</td>
+    <td class="tg-9wq8">256/129</td>
+    <td class="tg-9wq8">1020/1020</td>
+    <td class="tg-9wq8">255/255</td>
+    <td class="tg-9wq8">639/639</td>
+    <td class="tg-9wq8">1849/1849</td>
+    <td class="tg-9wq8">204.9/204.9</td>
   </tr>
   <tr>
-    <td class="tg-baqh">arbiter</td>
-    <td class="tg-baqh">256/129</td>
-    <td class="tg-baqh">11839/11839</td>
-    <td class="tg-baqh">87/87</td>
-    <td class="tg-baqh">6678/6678</td>
-    <td class="tg-baqh">18773/18773</td>
-    <td class="tg-baqh">70.7/70.7</td>
+    <td class="tg-9wq8">arbiter</td>
+    <td class="tg-9wq8">256/129</td>
+    <td class="tg-9wq8">11839/11839</td>
+    <td class="tg-9wq8">87/87</td>
+    <td class="tg-9wq8">6678/6678</td>
+    <td class="tg-9wq8">18773/18773</td>
+    <td class="tg-9wq8">70.7/70.7</td>
   </tr>
   <tr>
-    <td class="tg-baqh">bar</td>
-    <td class="tg-baqh">135/128</td>
-    <td class="tg-9ewa">3336/3141</td>
-    <td class="tg-baqh">12/12</td>
-    <td class="tg-9ewa">2319/2161</td>
-    <td class="tg-9ewa">5911/5693</td>
-    <td class="tg-baqh">10.2/10.9</td>
+    <td class="tg-9wq8">bar</td>
+    <td class="tg-9wq8">135/128</td>
+    <td class="tg-uzvj">3336/3141</td>
+    <td class="tg-9wq8">12/12</td>
+    <td class="tg-uzvj">2319/2161</td>
+    <td class="tg-uzvj">5911/5693</td>
+    <td class="tg-9wq8">10.2/10.9</td>
   </tr>
   <tr>
-    <td class="tg-baqh">cavlc</td>
-    <td class="tg-baqh">10/11</td>
-    <td class="tg-9ewa">693/687</td>
-    <td class="tg-baqh">16/16</td>
-    <td class="tg-9ewa">485/483</td>
-    <td class="tg-baqh">1212/1218</td>
-    <td class="tg-9ewa">14.3/14.1</td>
+    <td class="tg-9wq8">cavlc</td>
+    <td class="tg-9wq8">10/11</td>
+    <td class="tg-uzvj">693/687</td>
+    <td class="tg-9wq8">16/16</td>
+    <td class="tg-uzvj">485/483</td>
+    <td class="tg-9wq8">1212/1218</td>
+    <td class="tg-uzvj">14.3/14.1</td>
   </tr>
   <tr>
-    <td class="tg-baqh">ctrl</td>
-    <td class="tg-baqh">7/26</td>
-    <td class="tg-9ewa">174/146</td>
-    <td class="tg-baqh">10/10</td>
-    <td class="tg-9ewa">113/110</td>
-    <td class="tg-9ewa">275/265</td>
-    <td class="tg-9ewa">8.3/7.9</td>
+    <td class="tg-9wq8">ctrl</td>
+    <td class="tg-9wq8">7/26</td>
+    <td class="tg-uzvj">174/146</td>
+    <td class="tg-9wq8">10/10</td>
+    <td class="tg-uzvj">113/110</td>
+    <td class="tg-uzvj">275/265</td>
+    <td class="tg-uzvj">8.3/7.9</td>
   </tr>
   <tr>
-    <td class="tg-baqh">dec</td>
-    <td class="tg-baqh">8/256</td>
-    <td class="tg-baqh">304/304</td>
-    <td class="tg-baqh">3/3</td>
-    <td class="tg-baqh">296/296</td>
-    <td class="tg-baqh">648/648</td>
-    <td class="tg-baqh">3.7/3.7</td>
+    <td class="tg-9wq8">dec</td>
+    <td class="tg-9wq8">8/256</td>
+    <td class="tg-9wq8">304/304</td>
+    <td class="tg-9wq8">3/3</td>
+    <td class="tg-9wq8">296/296</td>
+    <td class="tg-9wq8">648/648</td>
+    <td class="tg-9wq8">3.7/3.7</td>
   </tr>
   <tr>
-    <td class="tg-baqh">div</td>
-    <td class="tg-baqh">128/128</td>
-    <td class="tg-9ewa">57247/41933</td>
-    <td class="tg-baqh">4372/4406</td>
-    <td class="tg-9ewa">55376/40950</td>
-    <td class="tg-9ewa">127233/99321</td>
-    <td class="tg-9ewa">3516.5/3442.3</td>
+    <td class="tg-9wq8">div</td>
+    <td class="tg-9wq8">128/128</td>
+    <td class="tg-uzvj">57247/41933</td>
+    <td class="tg-9wq8">4372/4406</td>
+    <td class="tg-uzvj">55376/40950</td>
+    <td class="tg-uzvj">127233/99321</td>
+    <td class="tg-uzvj">3516.5/3442.3</td>
   </tr>
   <tr>
-    <td class="tg-baqh">hyp</td>
-    <td class="tg-baqh">256/128</td>
-    <td class="tg-9ewa">214335/212833</td>
-    <td class="tg-baqh">24801/24802</td>
-    <td class="tg-baqh">116061/116717</td>
-    <td class="tg-baqh">364855/365750</td>
-    <td class="tg-9ewa">16771.4/16723.3</td>
+    <td class="tg-9wq8">hyp</td>
+    <td class="tg-9wq8">256/128</td>
+    <td class="tg-uzvj">214335/212833</td>
+    <td class="tg-9wq8">24801/24802</td>
+    <td class="tg-9wq8">116061/116717</td>
+    <td class="tg-9wq8">364855/365750</td>
+    <td class="tg-uzvj">16771.4/16723.3</td>
   </tr>
   <tr>
-    <td class="tg-baqh">i2c</td>
-    <td class="tg-baqh">147/142</td>
-    <td class="tg-9ewa">1342/1262</td>
-    <td class="tg-9ewa">20/16</td>
-    <td class="tg-9ewa">1010/986</td>
-    <td class="tg-9ewa">2458/2346</td>
-    <td class="tg-9ewa">14.6/13.2</td>
+    <td class="tg-9wq8">i2c</td>
+    <td class="tg-9wq8">147/142</td>
+    <td class="tg-uzvj">1342/1262</td>
+    <td class="tg-uzvj">20/16</td>
+    <td class="tg-uzvj">1010/986</td>
+    <td class="tg-uzvj">2458/2346</td>
+    <td class="tg-uzvj">14.6/13.2</td>
   </tr>
   <tr>
-    <td class="tg-baqh">int2float</td>
-    <td class="tg-baqh">11/7</td>
-    <td class="tg-9ewa">260/229</td>
-    <td class="tg-9ewa">16/15</td>
-    <td class="tg-9ewa">158/154</td>
-    <td class="tg-9ewa">429/393</td>
-    <td class="tg-baqh">12.9/12.9</td>
+    <td class="tg-9wq8">int2float</td>
+    <td class="tg-9wq8">11/7</td>
+    <td class="tg-uzvj">260/229</td>
+    <td class="tg-uzvj">16/15</td>
+    <td class="tg-uzvj">158/154</td>
+    <td class="tg-uzvj">429/393</td>
+    <td class="tg-9wq8">12.9/12.9</td>
   </tr>
   <tr>
-    <td class="tg-baqh">log2</td>
-    <td class="tg-baqh">32/32</td>
-    <td class="tg-9ewa">32060/29901</td>
-    <td class="tg-9ewa">444/392</td>
-    <td class="tg-baqh">14037/15629</td>
-    <td class="tg-baqh">46105/48845</td>
-    <td class="tg-9ewa">294.9/273.7</td>
+    <td class="tg-9wq8">log2</td>
+    <td class="tg-9wq8">32/32</td>
+    <td class="tg-uzvj">32060/29901</td>
+    <td class="tg-uzvj">444/392</td>
+    <td class="tg-9wq8">14037/15629</td>
+    <td class="tg-9wq8">46105/48845</td>
+    <td class="tg-uzvj">294.9/273.7</td>
   </tr>
   <tr>
-    <td class="tg-baqh">max</td>
-    <td class="tg-baqh">512/130</td>
-    <td class="tg-baqh">2865/2865</td>
-    <td class="tg-9ewa">287/229</td>
-    <td class="tg-9ewa">2474/2363</td>
-    <td class="tg-9ewa">5650/5386</td>
-    <td class="tg-9ewa">205.5/177.8</td>
+    <td class="tg-9wq8">max</td>
+    <td class="tg-9wq8">512/130</td>
+    <td class="tg-9wq8">2865/2865</td>
+    <td class="tg-uzvj">287/229</td>
+    <td class="tg-uzvj">2474/2363</td>
+    <td class="tg-uzvj">5650/5386</td>
+    <td class="tg-uzvj">205.5/177.8</td>
   </tr>
   <tr>
-    <td class="tg-baqh">mem_ctrl</td>
-    <td class="tg-baqh">1204/1231</td>
-    <td class="tg-9ewa">46836/46701</td>
-    <td class="tg-baqh">114/114</td>
-    <td class="tg-9ewa">33361/33316</td>
-    <td class="tg-9ewa">81657/81466</td>
-    <td class="tg-baqh">87.8/87.8</td>
+    <td class="tg-9wq8">mem_ctrl</td>
+    <td class="tg-9wq8">1204/1231</td>
+    <td class="tg-uzvj">46836/46701</td>
+    <td class="tg-9wq8">114/114</td>
+    <td class="tg-uzvj">33361/33316</td>
+    <td class="tg-uzvj">81657/81466</td>
+    <td class="tg-9wq8">87.8/87.8</td>
   </tr>
   <tr>
-    <td class="tg-baqh">multiplier</td>
-    <td class="tg-baqh">128/128</td>
-    <td class="tg-9ewa">27062/24760</td>
-    <td class="tg-9ewa">274/264</td>
-    <td class="tg-baqh">11676/11712</td>
-    <td class="tg-9ewa">40751/40296</td>
-    <td class="tg-9ewa">209.2/208.8</td>
+    <td class="tg-9wq8">multiplier</td>
+    <td class="tg-9wq8">128/128</td>
+    <td class="tg-uzvj">27062/24760</td>
+    <td class="tg-uzvj">274/264</td>
+    <td class="tg-9wq8">11676/11712</td>
+    <td class="tg-uzvj">40751/40296</td>
+    <td class="tg-uzvj">209.2/208.8</td>
   </tr>
   <tr>
-    <td class="tg-baqh">priority</td>
-    <td class="tg-baqh">128/8</td>
-    <td class="tg-9ewa">978/832</td>
-    <td class="tg-9ewa">250/246</td>
-    <td class="tg-9ewa">756/675</td>
-    <td class="tg-9ewa">1736/1515</td>
-    <td class="tg-9ewa">199.3/197.7</td>
+    <td class="tg-9wq8">priority</td>
+    <td class="tg-9wq8">128/8</td>
+    <td class="tg-uzvj">978/832</td>
+    <td class="tg-uzvj">250/246</td>
+    <td class="tg-uzvj">756/675</td>
+    <td class="tg-uzvj">1736/1515</td>
+    <td class="tg-uzvj">199.3/197.7</td>
   </tr>
   <tr>
-    <td class="tg-baqh">router</td>
-    <td class="tg-baqh">60/30</td>
-    <td class="tg-9ewa">257/245</td>
-    <td class="tg-9ewa">54/27</td>
-    <td class="tg-baqh">198/213</td>
-    <td class="tg-baqh">527/547</td>
-    <td class="tg-9ewa">37.5/20.7</td>
+    <td class="tg-9wq8">router</td>
+    <td class="tg-9wq8">60/30</td>
+    <td class="tg-uzvj">257/245</td>
+    <td class="tg-uzvj">54/27</td>
+    <td class="tg-9wq8">198/213</td>
+    <td class="tg-9wq8">527/547</td>
+    <td class="tg-uzvj">37.5/20.7</td>
   </tr>
   <tr>
-    <td class="tg-baqh">sin</td>
-    <td class="tg-baqh">24/25</td>
-    <td class="tg-9ewa">5416/5188</td>
-    <td class="tg-9ewa">225/183</td>
-    <td class="tg-baqh">3387/3518</td>
-    <td class="tg-baqh">9462/9883</td>
-    <td class="tg-9ewa">149.4/133</td>
+    <td class="tg-9wq8">sin</td>
+    <td class="tg-9wq8">24/25</td>
+    <td class="tg-uzvj">5416/5188</td>
+    <td class="tg-uzvj">225/183</td>
+    <td class="tg-9wq8">3387/3518</td>
+    <td class="tg-9wq8">9462/9883</td>
+    <td class="tg-uzvj">149.4/133</td>
   </tr>
   <tr>
-    <td class="tg-baqh">sqrt</td>
-    <td class="tg-baqh">128/64</td>
-    <td class="tg-9ewa">24618/18768</td>
-    <td class="tg-baqh">5058/6048</td>
-    <td class="tg-9ewa">19211/13827</td>
-    <td class="tg-9ewa">44523/35227</td>
-    <td class="tg-9ewa">4235.8/4088.2</td>
+    <td class="tg-9wq8">sqrt</td>
+    <td class="tg-9wq8">128/64</td>
+    <td class="tg-uzvj">24618/18768</td>
+    <td class="tg-9wq8">5058/6048</td>
+    <td class="tg-uzvj">19211/13827</td>
+    <td class="tg-uzvj">44523/35227</td>
+    <td class="tg-uzvj">4235.8/4088.2</td>
   </tr>
   <tr>
-    <td class="tg-baqh">square</td>
-    <td class="tg-baqh">64/128</td>
-    <td class="tg-9ewa">18484/17606</td>
-    <td class="tg-9ewa">250/249</td>
-    <td class="tg-9ewa">9704/9669</td>
-    <td class="tg-9ewa">28288/27812</td>
-    <td class="tg-9ewa">199.4/199.2</td>
+    <td class="tg-9wq8">square</td>
+    <td class="tg-9wq8">64/128</td>
+    <td class="tg-uzvj">18484/17606</td>
+    <td class="tg-uzvj">250/249</td>
+    <td class="tg-uzvj">9704/9669</td>
+    <td class="tg-uzvj">28288/27812</td>
+    <td class="tg-uzvj">199.4/199.2</td>
   </tr>
   <tr>
-    <td class="tg-baqh">voter</td>
-    <td class="tg-baqh">1001/1</td>
-    <td class="tg-9ewa">13758/10861</td>
-    <td class="tg-9ewa">70/69</td>
-    <td class="tg-9ewa">8325/5613</td>
-    <td class="tg-9ewa">22807/16929</td>
-    <td class="tg-9ewa">53.5/46.2</td>
+    <td class="tg-9wq8">voter</td>
+    <td class="tg-9wq8">1001/1</td>
+    <td class="tg-uzvj">13758/10861</td>
+    <td class="tg-uzvj">70/69</td>
+    <td class="tg-uzvj">8325/5613</td>
+    <td class="tg-uzvj">22807/16929</td>
+    <td class="tg-uzvj">53.5/46.2</td>
   </tr></thead></table>
